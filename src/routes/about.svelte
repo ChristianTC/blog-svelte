@@ -2,6 +2,9 @@
 	<title>About</title>
 </svelte:head>
 
-<h1>About this site</h1>
+<div class="About">
 
-<p>This is the 'about' page. There's not much here.</p>
+	<h1>About me</h1>
+	
+	<p>I am Christian Tambo, frontend Developer.</p>
+</div>
