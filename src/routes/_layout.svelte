@@ -2,7 +2,8 @@
 	import Nav from '../components/Nav.svelte';
 	import Main from '../components/Main.svelte';
 	import Header from '../components/Header.svelte';
-
+	import Footer from '../components/Footer.svelte';
+	
 	export let segment;
 </script>
 <Header />
@@ -12,3 +13,4 @@
 <Main>
 	<slot></slot>
 </Main>
+<Footer />
