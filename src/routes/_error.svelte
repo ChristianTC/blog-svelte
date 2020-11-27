@@ -6,6 +6,36 @@
 </script>
 
 <style>
+
+	.Error404 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.Error404-image figure {
+		margin: 0;
+		padding: 0;
+		text-align: right;
+	}
+	.Error404-image img {
+		width: 250px;
+		margin: 2em 0 0 0;
+		transform: translateY(0px);
+		animation: float 8s ease-in-out infinite;
+	}
+	@keyframes float {
+		0% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-40px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
+	}
+
+
 	h1, p {
 		margin: 0 auto;
 	}
@@ -31,10 +61,22 @@
 	<title>{status}</title>
 </svelte:head>
 
-<h1>{status}</h1>
+<div class="Error404">
+	<div class="Error404-message">
 
-<p>{error.message}</p>
+		<h1>{status}</h1>
+		
+		<p>{error.message}</p>
+		
+		{#if dev && error.stack}
+			<pre>{error.stack}</pre>
+		{/if}
+	</div>
+	<div class="Error404-image">
+		<figure>
+			<img src="https://arepa.s3.amazonaws.com/img404.png" alt="Error 404" />
+		</figure>
+	</div>
+</div>
 
-{#if dev && error.stack}
-	<pre>{error.stack}</pre>
-{/if}
+
