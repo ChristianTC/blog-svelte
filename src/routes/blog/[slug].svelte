@@ -14,10 +14,27 @@
 </script>
 
 <script>
-import readingTime from "../../utils/readingTime";
-import formatIsoTime from '../../utils/formatIsoTime';
+	import readingTime from "../../utils/readingTime";
+	import formatIsoTime from '../../utils/formatIsoTime';
+	import { onMount } from "svelte";
 
 	export let post;
+
+
+	const disqus = () => {
+	
+		if(document.readyState === 'complete') {
+			let d = document, s = d.createElement('script');
+			s.src = 'https://chrisdev-1.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		}
+    };
+
+	onMount(async () => {
+		await disqus();
+	});
+
 </script>
 
 <style>
@@ -57,7 +74,9 @@ import formatIsoTime from '../../utils/formatIsoTime';
 		{@html post.html}
 	</div>
 	<div class="comments">
-		
+		<div id="disqus_thread">
+			
+		</div>
 	</div>
 
 </div>
