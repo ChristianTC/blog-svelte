@@ -4,7 +4,9 @@
 </script>
 
 <style>
+    
     .Main-container {
+        padding-bottom: 100px;
         display: grid;
         grid-template-columns: minmax(auto, 1024px);
         justify-content: center;
@@ -14,7 +16,7 @@
     .Main-content {
         margin: 2em 0 0 0;
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        /* grid-template-columns: 5fr 0fr; */
         grid-gap: 60px;
         justify-content: space-between;
     }

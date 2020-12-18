@@ -19,8 +19,11 @@
     }
     h4 {
         font-size: 16px;
+        font-family: sans-serif;
+        color: #eff3f8;
     }
     p {
+        font-family: sans-serif;
         font-weight: 300;
         color: #333;
         font-size: 15px;
@@ -80,7 +83,7 @@
             <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>
         </p>
     </form>
-    <p>No enviamos spam.</p>
+    <p>I don't send spam.</p>
 </div>
 
         

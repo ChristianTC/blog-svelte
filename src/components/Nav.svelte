@@ -7,8 +7,10 @@
 	.Nav {
 		border-bottom: 1px solid rgba(255,0,121,0.2);
 		font-weight: 300;
-		background-color: #fafbfc;
+		/* background-color: #fafbfc; */
 		color: #191a22;
+
+		border-bottom: #eff3f8 solid 1px ;
 	}
 	.Nav-container {
 		display: grid;
@@ -19,6 +21,7 @@
 	.Nav-content {
 		display: flex;
 		justify-content: space-between;
+		padding-left: 10px;
 	}
 
 	ul {
@@ -47,8 +50,8 @@
 		position: absolute;
 		content: '';
 		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
+		height: 4px;
+		background-color: #eff3f8;
 		display: block;
 		bottom: -1px;
 	}
@@ -60,10 +63,11 @@
 		font-size: 14px;
 		font-weight: 300;
 		transition: all 0.3s ease-in-out 0s;
-		color: rgba(25, 26, 34, 0.7);
+		color: #eff3f8;
+		font-family: sans-serif;
 	}
 	a:hover {
-		color: rgba(25, 26, 34, 1);
+		color: #cecece;
 	}
 </style>
 
@@ -71,11 +75,12 @@
 	<div class="Nav-container">
 		<div class="Nav-content">
 			<ul>
-				<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-				<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
-				<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">contact</a></li>
-				<li><a aria-current="{segment === 'general' ? 'page' : undefined}" href="general">general</a></li>
-				<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+				<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
+				<li><a aria-current="{segment === 'blog2' ? 'page' : undefined}" href="blog2">Blog2</a></li>
+				<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
+				<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">Contact</a></li>
+				<li><a aria-current="{segment === 'general' ? 'page' : undefined}" href="general">General</a></li>
+				<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Blog</a></li>
 			</ul>
 		</div>
 	</div>
