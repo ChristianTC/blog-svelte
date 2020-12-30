@@ -52,6 +52,11 @@
 		padding-left: 15%;
 		padding-right: 15%;
 	} */
+	
+	.Post__container {
+		text-align: justify;
+	}
+
 	.Post, .Post h2 {
 		color: var(--white);
 		font-family: sans-serif;
@@ -68,36 +73,46 @@
 	.comments {
 		margin: 2em 0 0 0;
 	}
-	@media screen and (max-width: 600px) {
-		.Post {
-			padding-left: 0;
-			padding-right: 0;
-		}
 
+	.content {
+		width: 350px;
 	}
+
+	
 
 </style>
 
+<!-- {post.title}
+<time datatime="post.createdAt">
+	📅 {formatIsoTime(post.createdAt)}
+</time>
+<span>{readingTime(post.html)}</span>
+<div id="disqus_thread">
+				
+</div> -->
 
-<div class="Post">
-	<div class="Post-title">
-		<h2>{post.title}</h2>
-	</div>
-	<p class="date">
-		<time datatime="post.createdAt">
-			📅 {formatIsoTime(post.createdAt)}
-		</time>
-		<span>{readingTime(post.html)}</span>
-
-	</p>
-	<div class="content">
-		{@html post.html}
-	</div>
-	<div class="comments">
-		<div id="disqus_thread">
-			
+<div class="Post__container">
+	<div class="Post">
+		<div class="Post-title">
+			<h2>{post.title}</h2>
 		</div>
+		<p class="date">
+			<time datatime="post.createdAt">
+				📅 {formatIsoTime(post.createdAt)}
+			</time>
+			<span>{readingTime(post.html)}</span>
+			
+		</p>
+		<div class="content">
+			{@html post.html}
+		</div>
+		<div class="comments">
+			<div id="disqus_thread">
+				
+			</div>
+		</div>
+		
 	</div>
-
+		
 </div>
 

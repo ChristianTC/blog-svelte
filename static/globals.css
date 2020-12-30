@@ -49,8 +49,8 @@ code {
 	padding: 0.2em 0.4em;
 	border-radius: 2px;
   }
-  
-  .content p {
+
+.content p {
 	color: #333;
 	font-size: 18px;
 	line-height: 28px;
@@ -58,8 +58,8 @@ code {
 	margin-bottom: 12px;
 	word-break: break-word;
 	font-weight: 300;
-  }
-  .content h2 {
+}
+.content h2 {
 	font-size: 1.4em;
 	font-weight: 500;
 	color: #191a22;
@@ -107,3 +107,6 @@ code {
 	overflow: hidden;
 	margin: 0.4em 0 1.6em;
   }
+@media screen and (min-width: 700px) {
+		
+}
