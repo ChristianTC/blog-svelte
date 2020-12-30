@@ -99,7 +99,7 @@
                 <a href="/">
                     <h1>
                         Christian Tambo
-                        <span>Frontend Developer</span>
+                        <span>Web Developer</span>
                     </h1>
                 </a>
             </div>
@@ -123,6 +123,11 @@
                     <li>
                         <a href="https://www.instagram.com/christian.jtc/" target="_blank" rel="noreferrer" on:click={analyticsTracking('Instagram')}>
                             <img src="./logo_instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.platzi.com/p/christiantambo/" target="_blank" rel="noreferrer" on:click={analyticsTracking('Instagram')}>
+                            <img src="./logo_platzi.svg" alt="Platzi">
                         </a>
                     </li>
                 </ul>

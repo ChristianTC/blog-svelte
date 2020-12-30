@@ -15,7 +15,7 @@
         transition: 0.3s;
     }
     .Post-item:hover {
-        box-shadow: 0 4px 8px 0 rgba(255,255,255,0.3);
+        box-shadow: 0 4px 8px 0 rgba(255,255,255,0.9);
     }
     .Post-content {
         padding: 10px;
@@ -62,13 +62,13 @@
         font-weight: 700;
     }
 </style>
-
+<a rel="prefetch" href="blog/{post.slug}">
 <div class="Post-item">
     <div class="Post-content">
         <div class="Post-head">
             <div class="Post-title">
                 <h2>
-                    <a rel="prefetch" href="blog/{post.slug}">{randomEmoji()} {post.title}</a>
+                    {randomEmoji()} {post.title}
                 </h2>
                 <p>
                     <time datetime="post.createdAt">
@@ -85,3 +85,4 @@
         </div>
     </div>
 </div>
+</a>

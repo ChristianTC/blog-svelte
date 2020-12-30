@@ -2,7 +2,7 @@
     .Footer {
         background: rgba(28, 41, 56,0.8);
         color: white;
-        padding: 1.5em 0;
+        padding: 0.5em 0;
         margin: 2em 0 0 0;
         font-size: 13px;
         font-weight: 300;
@@ -43,7 +43,7 @@
         .Footer {
             background: rgba(28, 41, 56,1);
             color: white;
-            padding: 1.5em 0;
+            padding: 0.5em 0;
             margin: 2em 0 0 0;
             font-size: 10px;
             font-weight: 300;
@@ -69,7 +69,7 @@
                 Developed by Christian Tambo 
             </div>
             <div class="Footer-svelte">
-                Proudly powered by svelte
+                <!-- Proudly powered by svelte -->
                 <img src="logo-192.png" alt="Svelte">
             </div>
         </div>

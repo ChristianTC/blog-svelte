@@ -38,15 +38,28 @@
 </script>
 
 <style>
-
+	:root{
+		--blue: #121f3d;
+		--white: #eff3f8;  
+	}
 	h2 {
 		color: #22215b;
 		font-size: 28px;
 		margin: 0;
 		padding: 0;
 	}
+	/* .Post {
+		padding-left: 15%;
+		padding-right: 15%;
+	} */
+	.Post, .Post h2 {
+		color: var(--white);
+		font-family: sans-serif;
+		letter-spacing: 0.1em;
+		text-align: justify;
+
+	}
 	.Post p {
-		color: #555;
 		font-size: 14px;
 		font-weight: 300;
 		margin-top: 5px;
@@ -54,6 +67,13 @@
 	}
 	.comments {
 		margin: 2em 0 0 0;
+	}
+	@media screen and (max-width: 600px) {
+		.Post {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
 	}
 
 </style>

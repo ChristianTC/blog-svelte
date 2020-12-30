@@ -57,6 +57,7 @@
 	}
 
 	a {
+		font-weight: bold;
 		text-decoration: none;
 		padding: 1em 1em 1em 0;
 		display: block;
@@ -64,7 +65,8 @@
 		font-weight: 300;
 		transition: all 0.3s ease-in-out 0s;
 		color: #eff3f8;
-		font-family: sans-serif;
+		font-family: "Saira",sans-serif;
+		letter-spacing: 0.1em;
 	}
 	a:hover {
 		color: #cecece;
@@ -76,10 +78,10 @@
 		<div class="Nav-content">
 			<ul>
 				<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
-				<li><a aria-current="{segment === 'blog2' ? 'page' : undefined}" href="blog2">Blog2</a></li>
 				<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
+				<li><a aria-current="{segment === 'portfolio' ? 'page' : undefined}" href="portfolio">Portfolio</a></li>
 				<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">Contact</a></li>
-				<li><a aria-current="{segment === 'general' ? 'page' : undefined}" href="general">General</a></li>
+				<!-- <li><a aria-current="{segment === 'blog2' ? 'page' : undefined}" href="blog2">Blog2</a></li> -->
 				<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Blog</a></li>
 			</ul>
 		</div>

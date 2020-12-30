@@ -1,5 +1,20 @@
+
+<script context="module">
+	export function preload() {
+		return this.fetch(`blog.json`).then(r => r.json()).then(posts => {
+			return { posts };
+		});
+	}
+</script>
+
+<script>
+	import Post from '../components/Post.svelte';
+	export let posts;
+</script>
 <style>
 	.perfil__container {
+		font-family: "Saira",sans-serif;
+		letter-spacing: 0.1em;
 		text-align: center;
 	}
 	.perfil__container img {
@@ -26,6 +41,25 @@
 		text-align: justify;
 		line-height: 2;
 	}
+	.perfil__content p {
+		text-align: center;
+    }
+	.perfil__content a {
+		text-decoration: none;
+		color: #eff3f8;
+
+    }
+	.Posts {			
+		color: #eff3f8;
+
+		font-family: "Saira",sans-serif;
+		letter-spacing: 0.1em;
+		padding: 0 10% 10% 10%;
+		display: grid;
+		justify-content: space-between;
+		grid-gap: 15px;
+		grid-template-columns: 1fr;
+	}
 
 	@media screen and (max-width: 600px) {
         .perfil__content {
@@ -39,6 +73,15 @@
 			text-align: justify;
 			line-height: 2;
         }
+
+		.Posts {
+			
+			padding: 0;
+			display: grid;
+			justify-content: space-between;
+			grid-gap: 15px;
+			grid-template-columns: 1fr;
+		}
     }
 </style>
 
@@ -49,13 +92,19 @@
 	</figure>
 
 	<section class="perfil__content">
-		<p>
-			I'm a developer from Bolivia who is mainly interested in web technologies, specially in frontend development.
-		</p>
-		<p>
-			sadsa
-		</p>
+		<a aria-current href="portfolio">
+			<p>
+				Check out my projects I have recently been working on 		
+			</p>
+		</a>
+		
 	</section>
-
+	
 </section>
 
+<section class="Posts">
+	Recent posts
+	{#each posts as post}
+		<Post {post} />
+	{/each}
+</section>

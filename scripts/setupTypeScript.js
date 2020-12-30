@@ -133,6 +133,7 @@ function updateSvelteFiles() {
 			view: 'routes/blog/[slug]',
 			vars: [{ name: 'post', type: '{ slug: string; title: string, html: any }' }]
 		}
+	// @ts-ignore
 	].forEach(updateSingleSvelteFile);
 }
 
