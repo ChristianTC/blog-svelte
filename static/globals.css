@@ -1,3 +1,7 @@
+:root{
+	--blue: #121f3d;
+	--white: #eff3f8;  
+}
 
 html {
 	height: 100%;
@@ -51,7 +55,7 @@ code {
   }
 
 .content p {
-	color: #333;
+	color: var(--white);
 	font-size: 18px;
 	line-height: 28px;
 	margin: 0 auto;
@@ -62,14 +66,14 @@ code {
 .content h2 {
 	font-size: 1.4em;
 	font-weight: 500;
-	color: #191a22;
+	color: var(--white);
   }
   .content img {
 	width: 100%;
   }
   .content pre {
 	background-color: #f9f9f9;
-	box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 1px 1px 5px rgba(var(--white), 0.05);
 	padding: 0.5em;
 	border-radius: 2px;
 	overflow-x: auto;
@@ -107,6 +111,19 @@ code {
 	overflow: hidden;
 	margin: 0.4em 0 1.6em;
   }
-@media screen and (min-width: 700px) {
-		
+  .kg-card .kg-image-card .kg-card-hascaption {
+	width: 10px;
+}
+img {
+	width: 10px;
+}
+@media screen and (max-width: 700px) {
+	.kg-card .kg-image-card .kg-card-hascaption {
+		width: 10px;
+	}
+	img {
+		width: 10px;
+	}
+
+	
 }

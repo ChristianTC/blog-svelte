@@ -55,6 +55,7 @@
 	
 	.Post__container {
 		text-align: justify;
+		padding: 10px;
 	}
 
 	.Post, .Post h2 {
@@ -69,19 +70,17 @@
 		font-weight: 300;
 		margin-top: 5px;
 		padding: 0;
+		color: var(--white);
 	}
 	.comments {
 		margin: 2em 0 0 0;
 	}
 
-	.content {
-		width: 350px;
-	}
 
 	
 
 </style>
-
+<link rel="stylesheet" href="./globals.css">
 <!-- {post.title}
 <time datatime="post.createdAt">
 	📅 {formatIsoTime(post.createdAt)}
