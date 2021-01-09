@@ -54,29 +54,58 @@
 	} */
 	
 	.Post__container {
-		text-align: justify;
-		padding: 10px;
+		max-width: 800px;
+		padding: 20px;
 	}
 
 	.Post, .Post h2 {
 		color: var(--white);
-		font-family: sans-serif;
 		letter-spacing: 0.1em;
-		text-align: justify;
-
+		
 	}
 	.Post p {
-		font-size: 14px;
+		text-align: justify;
+		font-size: 11px;
 		font-weight: 300;
 		margin-top: 5px;
 		padding: 0;
 		color: var(--white);
 	}
+	.Post img {
+		width: 600px;
+		border-radius: 20px;
+	}
 	.comments {
 		margin: 2em 0 0 0;
 	}
-
-
+	.date {
+		text-align: start;
+	}
+	
+	.image {
+		text-align: center;
+	}
+	
+	
+	@media screen and (max-width: 700px) {
+		.Post__container {
+			width: 80%;
+		}
+		.Post img {
+			width: 300px;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.Post__container {
+			width: 300px;
+		}
+		.Post img {
+			width: 250px;
+		}
+		.Post {
+			text-align: justify;
+		}
+	}
 	
 
 </style>
@@ -102,6 +131,9 @@
 			<span>{readingTime(post.html)}</span>
 			
 		</p>
+		<figure class="image">
+			<img src="{post.image}" alt="">
+		</figure>
 		<div class="content">
 			{@html post.html}
 		</div>

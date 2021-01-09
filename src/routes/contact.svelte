@@ -31,6 +31,7 @@
         text-align: center;
     }
     .SocialMedia__title {
+        padding-left: 15px;
         align-self: center;
     }
     .SocialMedia__title a{
@@ -52,8 +53,10 @@
     <h1>Contact</h1>
     <p>
         If you wanna get in touch or talk about a project, feel free to contact me via email at
-        christiantambo15@gmail.com
-        .You can also send me a Direct Message on Social Media.
+        christiantambo15@gmail.com 
+    </p>
+    <p>
+        You can also send me a Direct Message on Social Media.
     </p>
     <section class="SocialMedia">
         <div class="SocialMedia__img">

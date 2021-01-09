@@ -43,11 +43,14 @@
 	}
 	.perfil__content p {
 		text-align: center;
-    }
+		color: #f6c900;
+	}
+	.perfil__content p:hover {
+		color: #cccecf;
+	}
 	.perfil__content a {
 		text-decoration: none;
 		color: #eff3f8;
-
     }
 	.Posts {			
 		color: #eff3f8;
@@ -94,7 +97,7 @@
 	<section class="perfil__content">
 		<a aria-current href="portfolio">
 			<p>
-				Check out my projects I have recently been working on 		
+				Check out my projects I have recently been working on 🢂
 			</p>
 		</a>
 		
