@@ -92,7 +92,7 @@
 <section class="project__container">
     <section class="project__content">
         <a target="_blank" href="https://christiantambo.netlify.app/">
-            <img src="./projects/project2.jpg" alt="">
+            <img src="./project2.jpg" alt="">
         </a>
             <div class="project__button">
                 <a target="_blank" href="https://christiantambo.netlify.app/">
@@ -105,7 +105,7 @@
     </section>
     <section class="project__content">
         <a target="_blank" href="https://www.supercontrato.com/">
-            <img src="./projects/project1.jpg" alt="">
+            <img src="./project1.jpg" alt="">
         </a>
         <div class="project__button">
             <a target="_blank" href="https://www.supercontrato.com/">
