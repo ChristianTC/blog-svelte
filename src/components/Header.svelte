@@ -62,7 +62,7 @@
     .Header-logo {
         display: flex;
     }
-    .Header-logo-rounded {
+    /* .Header-logo-rounded {
         align-self: center;
         padding: 15px;
         color: #eff3f8;
@@ -78,7 +78,7 @@
 		inset 8px 16px 0 #00f;
 		
 		animation: animate 5s linear infinite;
-    }
+    } */
 
     @keyframes animate{
         0% {

@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "CHRISTIAN TAMBO",
+  "description": "Christian's blog",
   "version": "0.0.1",
   "scripts": {
     "data": "node src/bin/index.js",
