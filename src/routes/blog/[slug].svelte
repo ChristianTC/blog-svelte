@@ -94,6 +94,9 @@
 		.Post img {
 			width: 300px;
 		}
+		.Post {
+			text-align: justify;
+		}
 	}
 	@media screen and (max-width: 400px) {
 		.Post__container {
