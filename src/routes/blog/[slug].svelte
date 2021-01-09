@@ -122,10 +122,9 @@
 				
 </div> -->
 <svelte:head>
-    <meta property="og:title" content="European Travel Destinations">
-	<meta property="og:description" content="Offering tour packages for individuals or groups.">
-	<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
-	<meta property="og:url" content="http://euro-travel-example.com/index.htm">
+    <meta property="og:title" content="{post.title}">
+	<meta property="og:description" content="{post.desc}">
+	<meta property="og:image" content="{post.image}">
 </svelte:head>
 
 <div class="Post__container">
