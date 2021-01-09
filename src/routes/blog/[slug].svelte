@@ -121,10 +121,12 @@
 <div id="disqus_thread">
 				
 </div> -->
-<meta property="og:title" content="European Travel Destinations">
-<meta property="og:description" content="Offering tour packages for individuals or groups.">
-<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
-<meta property="og:url" content="http://euro-travel-example.com/index.htm">
+<svelte:head>
+    <meta property="og:title" content="European Travel Destinations">
+	<meta property="og:description" content="Offering tour packages for individuals or groups.">
+	<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+	<meta property="og:url" content="http://euro-travel-example.com/index.htm">
+</svelte:head>
 
 <div class="Post__container">
 	<div class="Post">
