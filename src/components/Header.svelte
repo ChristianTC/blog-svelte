@@ -99,7 +99,7 @@
                 <a href="/">
                     <h1>
                         Christian Tambo
-                        <span>Web Developer</span>
+                        <span>Software Engineer</span>
                     </h1>
                 </a>
             </div>

@@ -114,7 +114,7 @@
 				Hi!, first of all I want to thank you for visiting my personal website.			
 			</p>
 			<p>
-				My name is Christian Tambo, I'm a developer from Bolivia, who is mainly interested in web technologies, now I'm focused in Front-end Development.
+				My name is Christian Tambo, I'm a developer from Bolivia, who is mainly interested in Software Development.
 			</p>
 		</article>
 	</div>
